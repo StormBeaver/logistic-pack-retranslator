@@ -21,7 +21,6 @@ import (
 )
 
 func main() {
-	// go http.ListenAndServe("localhost:10000", nil)
 	if err := config.ReadConfigYML("config.yml"); err != nil {
 		log.Fatal().Err(err).Msg("Failed init configuration")
 	}
